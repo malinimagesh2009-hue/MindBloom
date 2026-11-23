@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker | MindBloom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/mood.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">✿</span> MindBloom</a>
+            <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰ Menu</button>
+            <nav class="nav-links"><a href="index.html">Home</a><a class="active" href="mood.html">Mood Tracker</a>
+                <a href="journal.html">Journal</a>
+                <a href="breathing.html">Breathing</a><a href="challenges.html">Challenges</a><a href="dashboard.html">Dashboard</a></nav>
+                <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button></header>
+<main class="container page-main"><div class="page-intro"><span class="eyebrow">Your daily check-in</span><h1>How are you feeling <span class="accent-text">today?</span></h1><p>There are no wrong answers. Choose the mood that feels closest to how you are right now.</p></div>
+<section class="panel">
+    <h2>Choose a mood</h2>
+    <div class="mood-options" id="mood-options">
+<button class="mood-option" data-mood="Happy" data-score="5">
+    <span>😀</span><b>Happy</b></button>
+    <button class="mood-option" data-mood="Good" data-score="4">
+        <span>🙂</span><b>Good</b></button>
+        <button class="mood-option" data-mood="Neutral" data-score="3"><span>😐</span><b>Neutral</b></button>
+        <button class="mood-option" data-mood="Sad" data-score="2"><span>😔</span><b>Sad</b></button>
+        <button class="mood-option" data-mood="Stressed" data-score="1"><span>😭</span><b>Stressed</b></button></div>
+<label class="field-label" for="mood-note">Would you like to add a note? 
+    <span class="muted">(optional)</span></label>
+    <textarea id="mood-note" rows="3" maxlength="300" placeholder="A few words about your day..."></textarea>
+    <div class="form-row"><span id="mood-feedback" class="form-feedback" aria-live="polite">Select a mood to save your check-in.</span>
+        <button class="btn btn-primary" id="save-mood" disabled>Save today's mood</button></div></section>
+<section class="panel"><div class="section-heading compact">
+    <div><span class="eyebrow">Looking back</span><h2>Your mood history</h2></div>
+    <span class="stat-pill" id="mood-total">0 check-ins</span></div>
+    <div id="mood-history" class="history-list">
+        <p class="empty-state">Your saved mood check-ins will appear here.</p></div></section>
+<div class="gentle-note">
+    <i class="fa-regular fa-heart"></i>
+    <p>Your mood is information, not a grade. It's okay to have different feelings on different days. If difficult feelings persist or affect daily life, consider talking with a trusted adult or qualified professional.</p></div></main>
+<footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html">✿ MindBloom</a><small>Saved privately in this browser · © <span class="current-year"></span></small>
+</div>
+</footer>
+</body>
+</html>

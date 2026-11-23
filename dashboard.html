@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Wellness Dashboard | MindBloom</title>
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="js/script.js"></script><script defer src="js/dashboard.js"></script></head>
+<body>
+    <header class="site-header"><a class="brand" href="index.html">
+        <span class="brand-mark">✿</span> MindBloom</a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰ Menu</button>
+        <nav class="nav-links"><a href="index.html">Home</a>
+            <a href="mood.html">Mood Tracker</a>
+            <a href="journal.html">Journal</a>
+            <a href="breathing.html">Breathing</a>
+            <a href="challenges.html">Challenges</a>
+            <a class="active" href="dashboard.html">Dashboard</a>
+        </nav>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i></button></header>
+<main class="container page-main">
+    <div class="page-intro"><span class="eyebrow">Your personal overview</span>
+        <h1>Look how far you've <span class="accent-text">grown.</span>
+        </h1><p>Your activity at a glance. Every check-in is a small piece of self-awareness.</p></div>
+<div class="stats-grid">
+    <article class="stat-card">
+        <span class="stat-icon lilac">
+            <i class="fa-regular fa-face-smile"></i></span><small>Mood check-ins</small><strong id="dash-moods">0</strong></article>
+            <article class="stat-card">
+                <span class="stat-icon peach"><i class="fa-solid fa-book-open"></i></span>
+                <small>Journal entries</small><strong id="dash-journals">0</strong></article>
+                <article class="stat-card"><span class="stat-icon mint"><i class="fa-solid fa-list-check"></i></span><small>Challenges completed</small><strong id="dash-challenges">0</strong></article>
+                <article class="stat-card"><span class="stat-icon butter"><i class="fa-solid fa-fire"></i></span><small>Current streak</small><strong id="dash-streak">0 days</strong></article></div>
+<div class="dashboard-grid"><section class="panel chart-panel">
+    <div class="section-heading compact"><div><span class="eyebrow">Last 7 days</span>
+        <h2>Mood trend</h2></div></div><div class="chart-wrap">
+            <canvas id="mood-chart" aria-label="Mood trend chart"></canvas>
+        </div>
+        <p class="muted chart-caption">Mood scores: Stressed 1 · Sad 2 · Neutral 3 · Good 4 · Happy 5</p></section>
+        <section class="panel chart-panel">
+            <div class="section-heading compact"><div>
+                <span class="eyebrow">Today</span><h2>Self-care progress</h2></div></div><div class="chart-wrap"><canvas id="challenge-chart" aria-label="Self-care progress chart"></canvas></div><p class="muted chart-caption">Based on today's checklist.</p></section></div>
+<div class="gentle-note"><i class="fa-solid fa-seedling"></i><p>These charts reflect only the information you choose to save in this browser. They are for personal reflection, not medical assessment or diagnosis.</p></div></main>
+<footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html">✿ MindBloom</a><small>© <span class="current-year"></span> MindBloom</small></div></footer></body></html>

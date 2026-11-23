@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MindBloom — a gentle space for mood tracking and everyday self-care.">
+  <title>MindBloom | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">✿</span> MindBloom</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i> Menu</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a><a href="mood.html">Mood Tracker</a>
+      <a href="journal.html">Journal</a><a href="breathing.html">Breathing</a>
+      <a href="challenges.html">Challenges</a><a href="dashboard.html">Dashboard</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+  </header>
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">A little care, every day</span>
+        <h1>Make space to <span class="accent-text">bloom.</span></h1>
+        <p class="lead">Your feelings matter. Check in with yourself, take a mindful pause, and celebrate the small steps that help you feel your best.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="mood.html">Check in with your mood <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-quiet" href="breathing.html">Take a breathing break</a></div>
+        <p class="privacy-note"><i class="fa-solid fa-lock"></i> Your entries stay in this browser on this device.</p>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration of a growing plant">
+        <div class="sun"></div>
+        <div class="plant-pot"><span class="stem"></span>
+            <span class="leaf leaf-one"></span><span class="leaf leaf-two"></span><span class="leaf leaf-three"></span><span class="leaf leaf-four"></span></div><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✧</span></div>
+    </section>
+    <section class="container section-block">
+      <div class="section-heading"><div><span class="eyebrow">Explore your toolkit</span><h2>Small tools for brighter days</h2></div><p>Choose what feels useful right now. There is no perfect way to use MindBloom.</p></div>
+      <div class="feature-grid">
+        <a class="feature-card" href="mood.html"><span class="feature-icon lilac"><i class="fa-regular fa-face-smile"></i></span>
+            <h3>Mood tracker</h3><p>Notice patterns by recording how you feel each day.</p>
+            <span class="card-link">Track a mood <i class="fa-solid fa-arrow-right"></i></span></a>
+        <a class="feature-card" href="journal.html"><span class="feature-icon peach"><i class="fa-solid fa-book-open"></i></span><h3>Daily journal</h3><p>Give your thoughts a little room on the page.</p><span class="card-link">Write an entry <i class="fa-solid fa-arrow-right"></i></span></a>
+        <a class="feature-card" href="breathing.html"><span class="feature-icon mint"><i class="fa-solid fa-wind"></i></span><h3>Breathing space</h3><p>Follow a gentle guided breathing rhythm.</p><span class="card-link">Start a pause <i class="fa-solid fa-arrow-right"></i></span></a>
+        <a class="feature-card" href="challenges.html"><span class="feature-icon butter"><i class="fa-solid fa-seedling"></i></span><h3>Self-care challenges</h3><p>Build kind, realistic habits one step at a time.</p><span class="card-link">See today's ideas <i class="fa-solid fa-arrow-right"></i></span></a>
+        <a class="feature-card" href="dashboard.html"><span class="feature-icon sky"><i class="fa-solid fa-chart-line"></i></span><h3>Wellness dashboard</h3><p>Look back at your check-ins and progress.</p><span class="card-link">View progress <i class="fa-solid fa-arrow-right"></i></span></a>
+        <div class="feature-card quote-card">
+            <span class="feature-icon lilac"><i class="fa-solid fa-quote-left"></i></span><h3>A thought to carry</h3><p id="home-quote">Small progress is still progress.</p>
+            <button class="text-button" id="home-next-quote" type="button">Another thought <i class="fa-solid fa-arrow-right"></i></button></div>
+      </div>
+    </section>
+    <section class="container quote-banner"><span class="quote-mark">“</span><div><span class="eyebrow">A gentle reminder</span><h2 id="daily-quote">Your mental health matters.</h2><p>Take what helps, leave what doesn't, and move at your own pace.</p></div><button class="btn btn-light" id="next-quote" type="button">New quote <i class="fa-solid fa-shuffle"></i></button></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html">
+    <span class="brand-mark">✿</span> MindBloom</a><p>A gentle space for everyday self-care.</p><small>MindBloom is a self-care tool, not a substitute for professional mental-health support.</small><small>© <span class="current-year"></span> MindBloom</small></div></footer>
+</body></html>

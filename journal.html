@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal | MindBloom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/journal.js"></script></head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">✿</span> MindBloom</a>
+            <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰ Menu</button>
+            <nav class="nav-links"><a href="index.html">Home</a>
+                <a href="mood.html">Mood Tracker</a>
+                <a class="active" href="journal.html">Journal</a>
+                <a href="breathing.html">Breathing</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+            <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+<main class="container page-main">
+    <div class="page-intro">
+        <span class="eyebrow">A page for your thoughts</span>
+        <h1>Dear <span class="accent-text">journal...</span>
+        </h1>
+        <p>Write freely. This space is for you, and your entry does not need to be perfect.</p></div>
+<section class="panel">
+    <label class="field-label" for="journal-entry">What's on your mind?</label><textarea id="journal-entry" class="journal-textarea" maxlength="3000" placeholder="Today I am feeling..."></textarea><div class="form-row"><span class="muted" id="journal-count">0 / 3000 characters</span><button class="btn btn-primary" id="save-entry">Save entry <i class="fa-solid fa-feather-pointed"></i></button></div><p id="journal-feedback" class="form-feedback" aria-live="polite"></p></section>
+<section class="panel">
+    <div class="section-heading compact">
+        <div><span class="eyebrow">Your reflections</span><h2>Previous entries</h2></div>
+        <span class="stat-pill" id="journal-total">0 entries</span></div>
+        <div id="journal-history" class="history-list"><p class="empty-state">Your journal entries will appear here.</p></div></section>
+<div class="gentle-note"><i class="fa-solid fa-lock"></i>
+    <p>Journal entries are stored in local storage in this browser. Anyone with access to this browser profile may be able to view them, so avoid writing passwords or highly sensitive information.</p></div></main>
+<footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="index.html">✿ MindBloom</a><small>© <span class="current-year"></span> MindBloom</small></div></footer></body></html>
